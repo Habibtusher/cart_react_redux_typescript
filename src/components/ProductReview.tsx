@@ -3,11 +3,8 @@ import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { FiSend } from 'react-icons/fi';
-import { useAppDispatch } from '@/redux/hooks';
-import {
-  useGetCommentsQuery,
-  usePostCommentMutation,
-} from '@/redux/api/apiSlice';
+import { useGetCommentsQuery, usePostCommentMutation } from '@/redux/features/products/productApi';
+
 
 
 interface IProps {
